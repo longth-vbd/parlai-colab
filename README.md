@@ -29,4 +29,16 @@ python -m parlai.scripts.interactive --model-file zoo:tutorial_transformer_gener
 python scripts/chat_interactive.py
 ```
 
-2. .
+2. Data looking
+```bash
+python scripts/data_look.py
+python -m parlai.scripts.display_data --task empathetic_dialogues
+python -m parlai.scripts.display_data -t empathetic_dialogues
+```
+
+3. Training
+```bash
+rm -rf from_scratch_model
+mkdir -p from_scratch_model
+python scripts/train_model.py
+```
